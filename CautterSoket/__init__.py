@@ -149,7 +149,7 @@ class CautterSoket:
                     while True:
                         data = self.receive(buffer_size)
                         if data==self.MSG_SEND_FILE_FINISHED:
-                            print('mensagem recebida:', repr(data))
+                            print('Message received:', repr(data))
                             break
                         f.write(data)
                     f.close()
